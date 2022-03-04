@@ -79,7 +79,7 @@ img{
 .btn:hover{
     background: transparent;
     color: var(--color-white);
-    border: var(--color-white);
+    /* border: var(--color-white); */
 }
 .btn-primary{
     background:var(--color-danger);
@@ -95,6 +95,12 @@ nav{
     top:0;
     z-index: 11;
 }
+
+.window-scroll{
+    background: var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
 .nav_container{
     display: flex;
     height: 100%;
@@ -141,6 +147,7 @@ header{
 
 .categories{
     background: var(--color-bg1);
+    height: 29rem;
 }
 .categories h1{
     line-height: 1;
@@ -168,6 +175,151 @@ header{
     border-radius: 1rem;
     transition: var(--transition);
 }
+
+.category:nth-child(2) .category_icon{
+    background: var(--color-danger);
+}
+
+.category:nth-child(3) .category_icon{
+    background: var(--color-success);
+}
+
+.category:nth-child(4) .category_icon{
+    background: var(--color-warning);
+}
+
+.category:nth-child(5) .category_icon{
+    background: var(--color-success);
+}
+
 .category:hover{
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
+.category_icon{
+    background: var(--color-primary);
+    padding: 0.7rem 1rem;
+    border-radius: 0.9rem;
+}
+.category h5{
+    margin: 2rem 0 1rem;
+}
+.category p{
+    font-size: 0.85rem;
+}
+
+/* =============================POPULAR COURSES=============================== */
+
+.courses{
+    margin-top: 10rem;
+}
+.courses_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.course{
+    background: var(--color-bg1);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.course:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+}
+.course_info{
+    padding: 2rem;
+}
+.course_info p{
+    padding: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+}
+
+/* =============================FAQs=============================== */
+
+.faqs{
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+.faqs_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.faq{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: var(--color-primary);
+    cursor: pointer;
+}
+.faq h4{
+    font-size: 1rem;
+    line-height: 2.2;
+}
+.faq_icon{
+    align-self: flex-start;
+    font-size: 1.2rem;
+}
+.faq p{
+    margin-top: 0.8rem;
+    display: none;
+}
+.faq.open p{
+    display: block;
+}
+
+/* =============================FAQs=============================== */
+
+.testimonials_container{
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+}
+.testimonial{
+    padding-top: 2rem;
+    overflow-x: hidden;
+}
+.avtar{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1rem solid var(--color-bg1);
+}
+.testimonial_info{
+    text-align: center;
+}
+.testimonial_body{
+    background-color: var(--color-primary);
+    padding: 2rem;
+    margin-top: 3rem;
+    position: relative;
+}
+.testimonial_body::before{
+    content: "";
+    display: block;
+    background: linear-gradient(135deg,transparent, var(--color-primary), var(--color-primary), var(--color-primary));
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 50%;
+    top: -1.5rem;
+    transform: rotate(45deg);
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
