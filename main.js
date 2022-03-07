@@ -22,21 +22,6 @@ faqs.forEach(faq=>{
 })
 
 
-// ===========================SWIPER JAVASCRIPT======================= 
-        const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints:{
-            600 : {
-                slidesPerView: 2,
-            }
-        }
-      });
-
 
     //   ===========================DROPDOWN EVENT FOR HAMBURGER MENU=============================
 
